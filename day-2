@@ -1,0 +1,6 @@
+public class HelloWorld{
+  public static void main(String args){
+    System.out.println{"hello world"}:
+  }
+}
+#切盘dirc 编译 执行直接用Java命令 编译要用java后缀 编写，编译，运行，文件名称java 文件类名称必须与代码一样
