@@ -1,8 +1,2 @@
 //方法 功能 需要调用功能从main方法里面调用
-Clearer API - Method names indicate behavior
-✅ Automatic tool execution - No manual management
-✅ Flexible control - Strategy pattern for loops
-✅ Better organized - Tool logic in separate class
-✅ Well tested - 23 unit tests
-✅ Better docs - Comprehensive guides
-✅ Type-safe - Full TypeScript support
+Clearer API - Method names indicate behavio
