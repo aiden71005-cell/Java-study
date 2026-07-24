@@ -8,4 +8,5 @@ byte 1个字节，kb mb gb  tb 1024
 整型byte short int（默认） long 浮点数（小数) float double(默认） 字符型char 布尔型boolean true false
 keywords：关键字  标识符：字母数字下划线美元
 */
+变量名：首字母小写， 类名首字母大写 驼峰模式。
  
