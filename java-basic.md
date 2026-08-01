@@ -71,3 +71,47 @@ do{
 System.out.print("x")	打印内容后不换行	连续输出同一行（如矩阵行）
 System.out.println("x")	打印内容后自动换行	输出完整一行后换行
 break：跳出并结束当前循环的执行，continue是用于跳出当前循环的当此执行，直接进入循环下一个
+math回返回（0，1）的小数
+
+
+生成随机数验证码：定义一个for循环，循环5次；随机生成012的数据，依次代表当前生成的字符是数字、大写字母、小写字母。；把012交给switch生成对应类型的随机字符；在循环外定义一个string类型变量用来连接生成随机字符；循环结束以后返回string类型即生成的验证码
+package com.itheima.demo;
+
+public class Test3 {
+    public static void main(String[] args) {
+        //目标：开发验证码
+        System.out.println(getCode(4));
+
+
+
+    }
+    public static String getCode(int n) {
+        String code = "";
+        for (int i = 0; i < n; i++) {
+            int number = (int)(Math.random()*3);
+            switch (number){
+                case 0:
+                int number1 = (int)(Math.random()*10);
+                code += number1;
+                 break;
+                case 1:
+                int number2 = (int)(Math.random()*26);
+                char ch= (char)(65+number2);
+                code += ch;
+                 break;
+                case 2:
+                 int number3 = (int)(Math.random()*26);
+                 char ch2= (char)(97+number3);
+                 code += ch2;
+                 break;
+
+
+            }
+
+        }
+        return code;
+
+    }
+
+
+}
