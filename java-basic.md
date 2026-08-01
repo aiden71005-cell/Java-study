@@ -35,3 +35,39 @@ default:
 switch表达式类型只能是byte、short、int、char、string、不支持double、float、long 
 case的值只能用字面量不能用变量，正常写switch要加break，否则就会出现穿透现象
 当存在多个case分支代码一样的时候，可以把代码写到一个case，其他case通过穿透case块，可以简化代码
+for循环（初始化语句；循环条件；迭代语句；）{
+循环体语句；
+}目标：减少代码的重复填写，灵活控制程序执行。 
+while循环写法：初始化语句；while（循环条件）{
+循环体；
+迭代语句
+}
+package com.itheima.loop;
+
+        public class WhileTest5 {
+            public static void main(String[] args) {
+                System.out.println("需要的年数："+cale());
+
+            }
+            public  static int cale(){
+                double money = 100000;
+        double rate = 0.017;
+        int year =0;
+        while(money < 200000 ){
+            year ++;
+            money =money*(1+rate);
+        }
+        return  year;
+    }
+}
+do——while循环
+初始化语句；
+do{
+循环体语句；
+迭代语句；
+} while（循环条件）；
+死循环就是一直循环下去，不停
+循环嵌套 外部循环每循环一次，内部循环就要跑一把
+System.out.print("x")	打印内容后不换行	连续输出同一行（如矩阵行）
+System.out.println("x")	打印内容后自动换行	输出完整一行后换行
+break：跳出并结束当前循环的执行，continue是用于跳出当前循环的当此执行，直接进入循环下一个
