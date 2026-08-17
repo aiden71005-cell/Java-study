@@ -115,3 +115,5 @@ public class Test3 {
 
 
 }
+数据类型[] 数组名={元素。。。。。}；
+System.out.println(arr[]);
